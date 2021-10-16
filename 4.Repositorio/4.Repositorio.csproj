@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>_4.Repositorio</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>&#xD;
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.10"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.10"/>
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22"/>
+    <PackageReference Include="ServiceStack.Redis" Version="5.12.0"/>
+  </ItemGroup>
+
+  <ItemGroup>
+   <ProjectReference Include="..\3.Dominio\3.Dominio.csproj"/>
+   <ProjectReference Include="..\2.Aplicacao\2.Aplicacao.csproj"/>
+  </ItemGroup>
+
+  
+</Project>
