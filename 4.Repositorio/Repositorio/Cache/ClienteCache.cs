@@ -16,6 +16,11 @@ namespace _4.Repositorio.Repositorio.Cache
     public class ClienteCache : IClienteCache
     {
 
+        
+        //DICAS
+        //*Voce pode colocar como CHAVE para guardar consultas de lista, a query SQL que trouxe aquele resultado
+        //*Tb existe no redis, parametros para expirar os dados de acordo com uma DATA
+
 
         private RedisClient redisClient;
         private readonly IMapper _mapper;
@@ -109,6 +114,8 @@ namespace _4.Repositorio.Repositorio.Cache
         }
 
         public void deleteCacheId(int id){
+
+            //É preciso fazer um tratamento anterior para verificar se o id existe no cache
 
             var chave = "cliente" + id.ToString();
 
